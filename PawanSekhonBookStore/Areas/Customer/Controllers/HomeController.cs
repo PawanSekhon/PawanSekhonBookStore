@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using PawanSekhonBookStore.Models;
 
-namespace PawanSekhonBookStore.Controllers
+namespace PawanSekhonBookStore.Area.Customer.Controllers
 {
     [Area("Customer")]
     public class HomeController : Controller
