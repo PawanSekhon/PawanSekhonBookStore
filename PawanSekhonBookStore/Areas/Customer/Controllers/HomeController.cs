@@ -9,6 +9,7 @@ using PawanSekhonBookStore.Models;
 
 namespace PawanSekhonBookStore.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
