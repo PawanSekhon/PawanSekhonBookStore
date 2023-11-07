@@ -11,7 +11,8 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using PawanSekhonBookStore.Data;
+//using PawanSekhonBookStore.Data;
+using PawanSekhonBookStore.DataAccess.Data;
 
 namespace PawanSekhonBookStore
 {
