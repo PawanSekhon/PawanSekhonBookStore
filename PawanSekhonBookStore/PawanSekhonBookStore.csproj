@@ -16,4 +16,9 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.17" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\PawanBooks.DataAccess\PawanBooks.DataAccess.csproj" />
+    <ProjectReference Include="..\PawanBooks.Models\PawanBooks.Models.csproj" />
+  </ItemGroup>
+
 </Project>
