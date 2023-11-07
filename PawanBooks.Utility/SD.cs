@@ -4,7 +4,7 @@ using System.Text;
 
 namespace PawanBooks.Utility
 {
-    class SD
+    public static class SD
     {
     }
 }

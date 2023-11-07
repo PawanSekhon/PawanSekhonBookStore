@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\PawanBooks.DataAccess\PawanBooks.DataAccess.csproj" />
     <ProjectReference Include="..\PawanBooks.Models\PawanBooks.Models.csproj" />
+    <ProjectReference Include="..\PawanBooks.Utility\PawanBooks.Utility.csproj" />
   </ItemGroup>
 
 </Project>
