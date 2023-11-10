@@ -105,3 +105,7 @@ checked tables in sql server and run the application.
 It run successfully.
 added category  class into .Models project and added migration via console.
 added public class  into the category.cs
+added using statement in Category.cs
+re-run the add migration command in console.
+Delete migration and re run the command add migration .
+successfully got the migrations again.
