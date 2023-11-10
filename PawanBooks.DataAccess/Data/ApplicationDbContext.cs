@@ -13,6 +13,6 @@ namespace PawanSekhonBookStore.DataAccess.Data
             : base(options)
         {
         }
-        public DbSet<Category> Category { get; set; }
+        public DbSet<Category> Categories { get; set; }
     }
 }
