@@ -112,3 +112,4 @@ successfully got the migrations again.
 added Repositoryand IRepository folder and IRepository interface in .DataAccess.
 Modified  IRepository.cs to do all CRUD operation.
 added the Repository.cs class and modify the code to create the constructors and dependency injection(DI).
+created CategoryRepository and ICategoryRepository and modify the code of both.
