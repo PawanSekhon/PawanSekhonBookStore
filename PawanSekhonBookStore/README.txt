@@ -101,3 +101,4 @@ created the migrations and modify the database name and saved it.
 added migrations into .DataAccess.
 Reviewed the file for the sql like syntax, clumns 
 updated database by commanding in the console.
+checked tables in sql server and run the application. 
