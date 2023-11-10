@@ -102,3 +102,5 @@ added migrations into .DataAccess.
 Reviewed the file for the sql like syntax, clumns 
 updated database by commanding in the console.
 checked tables in sql server and run the application. 
+It run successfully.
+added category  class into .Models project and added migration via console.
