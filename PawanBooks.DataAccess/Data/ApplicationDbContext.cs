@@ -4,6 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
+
 namespace PawanSekhonBookStore.DataAccess.Data
 {
     public class ApplicationDbContext : IdentityDbContext
