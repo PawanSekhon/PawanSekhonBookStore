@@ -1,21 +1,32 @@
 ﻿using PawanBooks.DataAccess.Repository.IRepository;
-using PawanBooks.Models;
 using PawanSekhonBookStore.DataAccess.Data;
+using PawanBooks.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Linq;
+using PawanBooks.DataAccess.Repository;
 
-namespace PawanBooks.DataAccess.Repository
+namespace LovepreetBook.DataAccess.Repository
 {
     public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
-        private class ApplicationDbContext_db
+        private readonly ApplicationDbContext _db;
+        public CategoryRepository(ApplicationDbContext db) : base(db)
         {
-
-            public CategoryRepository(ApplicationDbContext db) : base(db)
+            _db = db;
+        }
+        public void Update(Category category)
+        {
+            var objFromDb = _db.Categories.FirstOrDefault(s => s.Id == category.Id);
+            if (objFromDb != null)
             {
-                _db = db;
+                objFromDb.Name = category.Name;
+                _db.SaveChanges();
             }
         }
-    }
+        /*{
+             throw new NotImplementedException();
+        }*/
+    }
 }
