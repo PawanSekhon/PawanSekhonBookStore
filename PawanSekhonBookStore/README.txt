@@ -98,3 +98,4 @@ Run the Website its not working
 Started part 2 
 2023-11-09@22:28pm
 created the migrations and modify the database name and saved it.
+added migrations into .DataAccess.
