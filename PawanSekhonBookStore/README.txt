@@ -114,3 +114,4 @@ Modified  IRepository.cs to do all CRUD operation.
 added the Repository.cs class and modify the code to create the constructors and dependency injection(DI).
 created CategoryRepository and ICategoryRepository and modify the code of both.
 modified the code in CategoryRepository.cs and ICategoryRepository.cs
+made ISP_Call.cs class in IRepository and modified the code according to the instruction.
