@@ -15,8 +15,4 @@
     <ProjectReference Include="..\PawanBooks.Utility\PawanBooks.Utility.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Repository\IRepository\" />
-  </ItemGroup>
-
 </Project>

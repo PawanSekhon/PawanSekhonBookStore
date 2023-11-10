@@ -109,4 +109,4 @@ added using statement in Category.cs
 re-run the add migration command in console.
 Delete migration and re run the command add migration .
 successfully got the migrations again.
-added Repositoryand IRepository folder and IRepository interface in .DataAccess
+added Repositoryand IRepository folder and IRepository interface in .DataAccess.
