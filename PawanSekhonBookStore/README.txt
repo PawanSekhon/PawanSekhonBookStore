@@ -95,3 +95,6 @@ following further steps whether it run or not.
 Copy and pasted "_ViewImports.cshtml" and "_ViewStart.cshtml" into Customer Area.
 Updated the path of "_layout.cshtml" in "_ViewStart.cshtml.
 Run the Website its not working 
+Started part 2 
+2023-11-09@22:28pm
+created the migrations and modify the database name and saved it.
