@@ -110,3 +110,4 @@ re-run the add migration command in console.
 Delete migration and re run the command add migration .
 successfully got the migrations again.
 added Repositoryand IRepository folder and IRepository interface in .DataAccess.
+Modified  IRepository.cs to do all CRUD operation.
