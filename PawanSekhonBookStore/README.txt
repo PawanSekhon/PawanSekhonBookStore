@@ -116,3 +116,4 @@ created CategoryRepository and ICategoryRepository and modify the code of both.
 modified the code in CategoryRepository.cs and ICategoryRepository.cs
 made ISP_Call.cs class in IRepository and modified the code according to the instruction.
 added new class "SP_Call.cs" in which i implemented ISP_Call interface, added connection to Database and updated the implementation.
+i got some errors and solved it BY HAVING potential solution but on error is still there which says"object does not contain a definition for Open and no accessible extension method Open accepting a first argument of type'object' could be found". and i decide to fic later on.
