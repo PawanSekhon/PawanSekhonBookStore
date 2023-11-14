@@ -122,3 +122,4 @@ i got some errors and solved it BY HAVING potential solution but on error is sti
 added new interface "UnitOfWork" and new class unit of work.
 added the code into the class file.
 deleted the auto generated folder"IUnitOfWork" and then added reference in UnitOfWork of IUnitOfWork to fix the final errors.
+edited CS_Call.cs file to fix error and created CategoryController and controller view in the PawanSekhonBookStore folder

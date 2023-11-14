@@ -43,7 +43,7 @@ namespace PawanBooks.DataAccess.Repository
         {
             using (SqlConnection sqlCon = new SqlConnection(ConnectionString))
             {
-                SqlCon.Open();
+                sqlCon.Open();
                 return sqlCon.Query<T>(procedureName, param, commandType: System.Data.CommandType.StoredProcedure);
 
             }
