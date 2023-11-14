@@ -23,8 +23,4 @@
     <ProjectReference Include="..\PawanBooks.Utility\PawanBooks.Utility.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Areas\Admin\Views\Category\" />
-  </ItemGroup>
-
 </Project>
