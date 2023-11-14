@@ -43,14 +43,18 @@ namespace PawanSekhonBookStore.Areas.Admin.Controllers
         [ValidateAntiForgeryToken]
         public IActionResult Upsert(Category category)
         {
-            if(ModelState.IsValid)      // checks all validations in the model(e.g. Name required) to increase security
+            if (ModelState.IsValid)      // checks all validations in the model(e.g. Name required) to increase security
             {
-                _unitOfWork.Category.Add(category);
-                _unitOfWork.Save();
-            }
-            else
-            {
+                if(category.Id == 0)
+                {
+                    _unitOfWork.Category.Add(category);
+                }
+                else
+                {
                 _unitOfWork.Category.Update(category);
+                }
+                _unitOfWork.Save();
+                return RedirectToAction(nameof(Index));    // to see all the categories
             }
             return View(category);
         }

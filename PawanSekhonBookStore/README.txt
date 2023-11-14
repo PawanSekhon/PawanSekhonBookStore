@@ -270,3 +270,4 @@ Changed the "Title" in Upsert.cshtml to "Edit Category".
 added the @ section call to Scripts to validate input on client side.
 created  Upsert POST method and save and void save method in category controller .cs.
 Removed the "_db.SaveChanges()" mthod in categoryRepository.cs.
+moved the "_unitOfWork.Save" method with "RedirectToAction" method.
