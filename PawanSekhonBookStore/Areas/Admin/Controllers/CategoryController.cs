@@ -38,6 +38,23 @@ namespace PawanSekhonBookStore.Areas.Admin.Controllers
             return View();
         }
 
+        // use HTTPS POST to define the post-action method
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Upsert(Category category)
+        {
+            if(ModelState.IsValid)      // checks all validations in the model(e.g. Name required) to increase security
+            {
+                _unitOfWork.Category.Add(category);
+                _unitOfWork.Save();
+            }
+            else
+            {
+                _unitOfWork.Category.Update(category);
+            }
+            return View(category);
+        }
+
         //API calls here
         #region API CALLS
         [HttpGet]
