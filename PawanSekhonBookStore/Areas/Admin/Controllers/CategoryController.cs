@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using PawanBooks.DataAccess.Repository.IRepository;
+using PawanBooks.Models;
 
 namespace PawanSekhonBookStore.Areas.Admin.Controllers
 {
