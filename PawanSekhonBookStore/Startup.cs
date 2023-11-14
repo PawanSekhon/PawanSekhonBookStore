@@ -11,6 +11,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using PawanBooks.DataAccess.Repository;
 //using PawanSekhonBookStore.Data;
 using PawanSekhonBookStore.DataAccess.Data;
 
@@ -35,6 +36,7 @@ namespace PawanSekhonBookStore
 
             services.AddDefaultIdentity<IdentityUser>()     //options => options.SignIn.RequireConfirmedAccount = true//
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddControllersWithViews();
         }
 
