@@ -126,3 +126,4 @@ edited CS_Call.cs file to fix error and created CategoryController and controlle
 Created index.cshtml razor view in the Areas>Admin>Views>Category.
 Modified the code according to the given CategoryView.txt file.
 Run the application and successfully got the output.
+Added the category link into the dropdown menu.
