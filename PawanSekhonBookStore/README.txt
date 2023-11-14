@@ -279,3 +279,5 @@ did many attempts to resolve that error but today finally got to know that the c
 i create new migration file to get the output. 
 added the API call for HTTPDelete in categoryController.cs
 Implemented the HTTPDelete with a delete method in category.js to add the functionality to the application and call the API.
+12:25pm
+added the Delete function url code into the category.js in which sweet alert is used for success and error message and toastr for notification.
