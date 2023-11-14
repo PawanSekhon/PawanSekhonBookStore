@@ -20,6 +20,23 @@ namespace PawanSekhonBookStore.Areas.Admin.Controllers
             return View();
         }
 
+        public IActionResult Upsert(int? id)      // action method for Upsert 
+        {
+            Category category = new Category();    // using PawanBooks.Models 
+            if (id == null)
+            {
+                // this is for create
+                return View(category);
+            }
+            // this for the edit
+            category = _unitOfWork.Category.Get(id.GetValueOrDefault());
+            if (category == null)
+            {
+                return NotFound();
+            }
+            return View();
+        }
+
         //API calls here
         #region API CALLS
         [HttpGet]
