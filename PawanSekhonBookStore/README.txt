@@ -278,3 +278,4 @@ From last night i was trying to run the application but when i tried to add new 
 did many attempts to resolve that error but today finally got to know that the category exceptional error was due to my un updated migration and then
 i create new migration file to get the output. 
 added the API call for HTTPDelete in categoryController.cs
+Implemented the HTTPDelete with a delete method in category.js to add the functionality to the application and call the API.
