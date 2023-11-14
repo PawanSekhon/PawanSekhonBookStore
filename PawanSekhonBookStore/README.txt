@@ -265,3 +265,6 @@ Added the IAction result to the controller and added a view.
 Added the Upsert view in the Category and added the given code from the Category Upsert View.txt into the new Upsert.cshtml.
 Then created a partial view for EDIT|BACK in general Views>Shared folder for "_CreateAndBackToListButton.cshtml".
 Added new partial view named as "_EditAndBackToList" and then added the code with modifies razoe term.
+Run the application
+Changed the "Title" in Upsert.cshtml to "Edit Category".
+added the @ section call to Scripts to validate input on client side.
