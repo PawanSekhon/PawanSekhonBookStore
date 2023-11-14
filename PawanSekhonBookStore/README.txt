@@ -125,3 +125,4 @@ deleted the auto generated folder"IUnitOfWork" and then added reference in UnitO
 edited CS_Call.cs file to fix error and created CategoryController and controller view in the PawanSekhonBookStore folder.
 Created index.cshtml razor view in the Areas>Admin>Views>Category.
 Modified the code according to the given CategoryView.txt file.
+Run the application and successfully got the output.
