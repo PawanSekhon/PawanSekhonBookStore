@@ -35,7 +35,7 @@ namespace PawanSekhonBookStore.Areas.Admin.Controllers
             {
                 return NotFound();
             }
-            return View();
+            return View(category);
         }
 
         // use HTTPS POST to define the post-action method

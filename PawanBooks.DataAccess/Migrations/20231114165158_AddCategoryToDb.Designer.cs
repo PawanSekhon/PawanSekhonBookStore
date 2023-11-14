@@ -10,7 +10,7 @@ using PawanSekhonBookStore.DataAccess.Data;
 namespace PawanBooks.DataAccess.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20231110043901_AddCategoryToDb")]
+    [Migration("20231114165158_AddCategoryToDb")]
     partial class AddCategoryToDb
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -235,7 +235,7 @@ namespace PawanBooks.DataAccess.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Category");
+                    b.ToTable("Categories");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>

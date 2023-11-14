@@ -12,9 +12,9 @@ namespace PawanBooks.DataAccess.Repository
     public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
         private readonly ApplicationDbContext _db;
-        public CategoryRepository(ApplicationDbContext db) : base(db)
+        public CategoryRepository(ApplicationDbContext dbContext) : base(dbContext)
         {
-            _db = db;
+            _db = dbContext;
         }
         public void Update(Category category)
         {
@@ -24,8 +24,12 @@ namespace PawanBooks.DataAccess.Repository
             if (objFromDb != null)
             {
                 objFromDb.Name = category.Name;
+                _db.SaveChanges();
                 
             }
+
+            throw new NotImplementedException();
+
         }
         
     }

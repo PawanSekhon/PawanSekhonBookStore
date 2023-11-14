@@ -271,3 +271,9 @@ added the @ section call to Scripts to validate input on client side.
 created  Upsert POST method and save and void save method in category controller .cs.
 Removed the "_db.SaveChanges()" mthod in categoryRepository.cs.
 moved the "_unitOfWork.Save" method with "RedirectToAction" method.
+
+2023-11-14
+@ 11:54
+From last night i was trying to run the application but when i tried to add new category it was showing an exceptional error.
+did many attempts to resolve that error but today finally got to know that the category exceptional error was due to my un updated migration and then
+i create new migration file to get the output. 
