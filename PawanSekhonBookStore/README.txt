@@ -225,7 +225,9 @@ following further steps whether it run or not.
 Copy and pasted "_ViewImports.cshtml" and "_ViewStart.cshtml" into Customer Area.
 Updated the path of "_layout.cshtml" in "_ViewStart.cshtml.
 Run the Website its not working 
+
 Started part 2 
+
 2023-11-09@22:28pm
 created the migrations and modify the database name and saved it.
 added migrations into .DataAccess.
@@ -237,7 +239,7 @@ added category  class into .Models project and added migration via console.
 added public class  into the category.cs
 added using statement in Category.cs
 re-run the add migration command in console.
-Delete migration and re run the command add migration .
+Delete migration and re run the command add migration (20231114165158_AddCategoryToDb.cs)
 successfully got the migrations again.
 added Repositoryand IRepository folder and IRepository interface in .DataAccess.
 Modified  IRepository.cs to do all CRUD operation.
