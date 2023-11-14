@@ -37,6 +37,7 @@ function Delete(url) {
         text: "You will not be able to restore the data!",
         icon: "warning",
         buttons: true
+        dangerMode: true
     }).then((willDelete) => {
         if (willDelete) {
             $.ajax({
@@ -44,11 +45,11 @@ function Delete(url) {
                 url: url,
                 success: function (data) {
                     if (data.success) {
-                        toaster.success(data.message);
+                        toastr.success(data.message);
                         dataTable.ajax.reload();
                     }
                     else {
-                        toaster.error(data.message);
+                        toastr.error(data.message);
                     }
                 }
             })
