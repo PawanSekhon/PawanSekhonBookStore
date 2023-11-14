@@ -264,3 +264,4 @@ Added the @section call to the category.js script.
 Added the IAction result to the controller and added a view.
 Added the Upsert view in the Category and added the given code from the Category Upsert View.txt into the new Upsert.cshtml.
 Then created a partial view for EDIT|BACK in general Views>Shared folder for "_CreateAndBackToListButton.cshtml".
+Added new partial view named as "_EditAndBackToList" and then added the code with modifies razoe term.
