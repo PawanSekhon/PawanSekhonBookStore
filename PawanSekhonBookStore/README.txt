@@ -260,3 +260,4 @@ Added the category link into the dropdown menu.
 modified the index.cshtml file to add the icon into the category.
 Commented out the icon in the index.cshtml file and added the javascript file into the wwwroot>js named as "category.js" file.
 Also added the provided code into the category.js file.
+Added the @section call to the category.js script.
