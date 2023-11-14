@@ -5,7 +5,7 @@ using Dapper;
 
 namespace PawanBooks.DataAccess.Repository.IRepository
 {
-    interface ISP_Call : IDisposable
+    public interface ISP_Call : IDisposable
     {
         //e.g. first column of first row int he result set 
         T Single<T>(string procedurename, DynamicParameters param = null);

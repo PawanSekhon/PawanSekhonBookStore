@@ -12,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using PawanBooks.DataAccess.Repository;
+using PawanBooks.DataAccess.Repository.IRepository;
 //using PawanSekhonBookStore.Data;
 using PawanSekhonBookStore.DataAccess.Data;
 

@@ -4,9 +4,11 @@ using System.Text;
 
 namespace PawanBooks.DataAccess.Repository.IRepository
 {
-    interface UnitOfWork : IDisposable
+    public interface IUnitOfWork : IDisposable
     {
         ICategoryRepository Category { get; }
-        ISP_Call SP_Call { get; }
+        ISP_Call SP_Call {get;}
+
+        void Save();
     }
 }
