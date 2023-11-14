@@ -277,3 +277,4 @@ moved the "_unitOfWork.Save" method with "RedirectToAction" method.
 From last night i was trying to run the application but when i tried to add new category it was showing an exceptional error.
 did many attempts to resolve that error but today finally got to know that the category exceptional error was due to my un updated migration and then
 i create new migration file to get the output. 
+added the API call for HTTPDelete in categoryController.cs
