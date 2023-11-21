@@ -238,8 +238,13 @@ It run successfully.
 added category  class into .Models project and added migration via console.
 added public class  into the category.cs
 added using statement in Category.cs
+
 re-run the add migration command in console.
+
+
 Delete migration and re run the command add migration (20231114165158_AddCategoryToDb.cs)
+
+
 successfully got the migrations again.
 added Repositoryand IRepository folder and IRepository interface in .DataAccess.
 Modified  IRepository.cs to do all CRUD operation.
