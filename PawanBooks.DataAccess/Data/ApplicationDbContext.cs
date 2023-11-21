@@ -18,5 +18,7 @@ namespace PawanSekhonBookStore.DataAccess.Data
 
         public DbSet<CoverType> CoverTypes { get; set; }
 
+        public DbSet<Product> Products { get; set; }    // adding products to DB
+
     }
 }
