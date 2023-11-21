@@ -301,3 +301,5 @@ Pushed CoverType in to the Database.
 added migration and updated database            STAMP : 20231121063646_AddCoverTypeToDb.cs
 
 
+
+added CoverType to NavBar, CoverType Controller, CoverType Index, Upsert View for updating and creating CoverType.
