@@ -292,13 +292,13 @@ run the application.
 didnot run properly 
 corrected the spelling mistakes in delete url and run it again. 
 
-2023/11/20 @ 23:11pm
+2023/11/20 @ 23:11pm************************PART-3.1**********************
 added new coverType CRUD  in PawanBooks.Models and included properties like name and id in it.
 added CoverType to UnitOfWork and IUnitOfWork.
 Pushed CoverType in to the Database.
 
 
-added migration and updated database            STAMP : 20231121063646_AddCoverTypeToDb.cs
+added migration and updated database            STAMP : 20231121063646_AddCoverTypeToDb.cs*************************************
 
 
 
@@ -311,7 +311,7 @@ added product class in .Models project and made the class public in it amd added
 added the migration and updated the database.     
 
 
-              STAMP :       20231121074611_AddProductToDb.cs
+              STAMP :       20231121074611_AddProductToDb.cs*********************************************
 
 
 
@@ -319,9 +319,32 @@ updated product.cs with "required method".
 
 Create migartion and ad validation and uodated database.
 
-            STAMP  :         20231121082011_AddValidationToProduct.cs
+            STAMP  :         20231121082011_AddValidationToProduct.cs*****************************************
 
 
 Created ProductRepository.cs and IProductRepository and modified the ProductRepository.cs to include ImageUrl of Product Object.
 Added Product into UnitOfWork and IUnitOfWork. 
 Then i build the solution and it run successfully
+
+***********PART-3.2**********************************************
+
+i modified the ProductController.cs
+i created a ProductVM.cs  view model
+Then
+i installed package "Microsoft.AspNetCore.Mvc.ViewFeatures" in packager install
+
+i modified ProductController.cs file 
+update API call to include the Category 
+CoverType Properties.....
+i modified the product index view file,
+added Title, ISBN, Price, Author and Category
+updated URL in  product.js file 
+i modify the _Layout.cshtml file to add a
+new link of product in nav bar
+
+
+run the application to test
+yupppppppppppp 
+its working
+
+its time to move Forword
