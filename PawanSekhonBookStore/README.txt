@@ -295,4 +295,9 @@ corrected the spelling mistakes in delete url and run it again.
 2023/11/20 @ 23:11pm
 added new coverType CRUD  in PawanBooks.Models and included properties like name and id in it.
 added CoverType to UnitOfWork and IUnitOfWork.
-Pushed CoverType in to the Database
+Pushed CoverType in to the Database.
+
+
+added migration and updated database            STAMP : 20231121063646_AddCoverTypeToDb.cs
+
+
