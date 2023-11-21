@@ -1,8 +1,11 @@
-﻿using System;
+﻿using PawanBooks.DataAccess.Repository;
+using PawanBooks.DataAccess.Repository.ICoverTypeRepository;
 using PawanBooks.DataAccess.Repository.IRepository;
 using PawanSekhonBookStore.DataAccess.Data;
+using System;
 using System.Collections.Generic;
 using System.Text;
+
 
 namespace PawanBooks.DataAccess.Repository
 {
