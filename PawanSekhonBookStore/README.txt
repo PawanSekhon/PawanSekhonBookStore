@@ -306,3 +306,11 @@ added CoverType to NavBar, CoverType Controller, CoverType Index, Upsert View fo
 added the coverType.js file 
 
 added product class in .Models project and made the class public in it amd added code to build the blueprints of this class.
+
+
+added the migration and updated the database.     
+
+
+              STAMP :       20231121074611_AddProductToDb.cs
+
+
