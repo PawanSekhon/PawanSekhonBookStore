@@ -21,15 +21,13 @@ namespace PawanBooks.Models
         [Range(1, 10000)]
         public double ListPrice { get; set; }
         public string ImageUrl { get; set; }
-
         [Required]
-        public int CategoryId { get; set; }//Foreign Key reference
+        public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         public Category Category { get; set; }
-
         [Required]
-        public int CoverTypeId { get; set; }  //Foreign Key reference
-        [ForeignKey("CoverId")]
+        public int CoverTypeId { get; set; }
+        [ForeignKey("CategoryId")]
         public CoverType CoverType { get; set; }
 
     }

@@ -314,3 +314,9 @@ added the migration and updated the database.
               STAMP :       20231121074611_AddProductToDb.cs
 
 
+
+updated product.cs with "required method".
+
+create migartion and ad validation and uodated database.
+
+            STAMP  :         20231121082011_AddValidationToProduct.cs
