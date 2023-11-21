@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using PawanBooks.DataAccess.Repository.IRepository;
 using PawanBooks.Models;
 
 namespace PawanSekhonBookStore.DataAccess.Data
@@ -14,5 +15,8 @@ namespace PawanSekhonBookStore.DataAccess.Data
         {
         }
         public DbSet<Category> Categories { get; set; }
+
+        public DbSet<CoverType> CoverTypes { get; set; }
+
     }
 }

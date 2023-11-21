@@ -1,12 +1,11 @@
-﻿using PawanBooks.DataAccess.Repository.ICoverTypeRepository;
-using PawanBooks.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using PawanBooks.Models;
 
 namespace PawanBooks.DataAccess.Repository.IRepository
 {
-    public interface ICoverType
+    public interface ICoverTypeRepository : IRepository<CoverType>
     {
         void Update(CoverType coverType);
     }

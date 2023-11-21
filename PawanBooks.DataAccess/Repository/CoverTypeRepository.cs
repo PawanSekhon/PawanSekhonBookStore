@@ -1,11 +1,10 @@
-﻿using PawanBooks.DataAccess.Repository;
-using PawanBooks.DataAccess.Repository.IRepository;
+﻿using PawanBooks.DataAccess.Repository.IRepository;
 using PawanBooks.Models;
-using PawanSekhonBookStore.DataAccess.Data;
 using System;
-using System.Linq;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
+using PawanSekhonBookStore.DataAccess.Data;
 
 namespace PawanBooks.DataAccess.Repository
 {

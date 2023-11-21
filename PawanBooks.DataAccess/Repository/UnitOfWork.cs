@@ -1,10 +1,5 @@
-﻿using PawanBooks.DataAccess.Repository;
-using PawanBooks.DataAccess.Repository.ICoverTypeRepository;
-using PawanBooks.DataAccess.Repository.IRepository;
+﻿using PawanBooks.DataAccess.Repository.IRepository;
 using PawanSekhonBookStore.DataAccess.Data;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 
 namespace PawanBooks.DataAccess.Repository
@@ -17,10 +12,15 @@ namespace PawanBooks.DataAccess.Repository
             _db = db;
             Category = new CategoryRepository(_db);
             SP_Call = new SP_Call(_db);
+            CoverType = new CoverTypeRepository(_db);
         }
         
         public ICategoryRepository Category { get; private set; }
         public ISP_Call SP_Call { get; private set; }
+        public ICoverTypeRepository CoverType { get; private set; }
+
+
+
         public void Dispose()
         {
             _db.Dispose();
