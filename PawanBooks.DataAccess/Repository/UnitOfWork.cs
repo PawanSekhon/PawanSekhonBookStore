@@ -31,7 +31,6 @@ namespace PawanBooks.DataAccess.Repository
 
 
 
-        IRepository.ICoverTypeRepository IUnitOfWork.CoverType => throw new NotImplementedException();
 
         IProductRepository IUnitOfWork.Product => throw new NotImplementedException();
 
