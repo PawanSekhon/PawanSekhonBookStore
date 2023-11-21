@@ -317,6 +317,9 @@ added the migration and updated the database.
 
 updated product.cs with "required method".
 
-create migartion and ad validation and uodated database.
+Create migartion and ad validation and uodated database.
 
             STAMP  :         20231121082011_AddValidationToProduct.cs
+
+
+Created ProductRepository.cs and IProductRepository and modified the ProductRepository.cs to include ImageUrl of Product Object.
