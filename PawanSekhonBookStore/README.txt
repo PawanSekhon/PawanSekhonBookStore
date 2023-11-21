@@ -291,3 +291,6 @@ added the Delete function url code into the category.js in which sweet alert is 
 run the application.
 didnot run properly 
 corrected the spelling mistakes in delete url and run it again. 
+
+2023/11/20 @ 23:11pm
+added new coverType CRUD  in PawanBooks.Models and included properties like name and id in it.
