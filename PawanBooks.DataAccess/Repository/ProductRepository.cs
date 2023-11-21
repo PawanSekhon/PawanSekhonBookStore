@@ -8,7 +8,7 @@ using System.Text;
 
 namespace PawanBooks.DataAccess.Repository
 {
-    class ProductRepository : Repository<Product>, IProductRespository
+    class ProductRepository : Repository<Product>, IProductRepository
     {
         private readonly ApplicationDbContext _db;
 

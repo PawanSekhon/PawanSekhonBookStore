@@ -323,3 +323,5 @@ Create migartion and ad validation and uodated database.
 
 
 Created ProductRepository.cs and IProductRepository and modified the ProductRepository.cs to include ImageUrl of Product Object.
+Added Product into UnitOfWork and IUnitOfWork. 
+Then i build the solution and it run successfully

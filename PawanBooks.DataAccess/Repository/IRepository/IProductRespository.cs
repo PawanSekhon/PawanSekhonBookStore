@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using PawanBooks.Models;
 
 namespace PawanBooks.DataAccess.Repository.IRepository
 {
-    interface IProductRespository
+    public interface IProductRepository : IRepository<Product>
     {
+        void Update(Product product);
     }
 }
