@@ -353,3 +353,5 @@ its time to move Forword
 added upsert.cshtml in the Areas>Admin>Views>Product.
 @11:45
 in the product controller configure the Product Upsert Post Action method and uncommented it before modification.
+@12:41 
+edited the product controller.

@@ -8,7 +8,6 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using PawanBooks.Models.ViewModels;
-using System.IO;
 
 namespace PawanSekhonBookStore.Areas.Admin.Controllers
 {
@@ -31,7 +30,7 @@ namespace PawanSekhonBookStore.Areas.Admin.Controllers
 
         public IActionResult Upsert(int? id)  //action method for upsert
         {
-            ProductVM productVM = new ProductVM()   //using LovepreetsBooks.Models
+            ProductVM productVM = new ProductVM()   //using PawanBooks.Models
             {
                 Product = new Product(),
                 CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
@@ -63,74 +62,24 @@ namespace PawanSekhonBookStore.Areas.Admin.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
 
-        public IActionResult Upsert(ProductVM productVM)
+        public IActionResult Upsert(Product product)
         {
             if (ModelState.IsValid)        //checks all validation in the model(e.g Name Required) to increase security
             {
-                string webRootPath = _hostEnvironment.WebRootPath;
-                var files = HttpContext.Request.Form.Files;
-                if (files.Count > 0)
+                if (product.Id == 0)
                 {
-                    string fileName = Guid.NewGuid().ToString();
-                    var uploads = Path.Combine(webRootPath, @"images\products");
-                    var extension = Path.GetExtension(files[0].FileName);
+                    _unitOfWork.Product.Add(product);
 
-                    if (productVM.Product.ImageUrl != null)
-                    {
-                        // this is an edit and we need to remove old image
-                        var imagePath = Path.Combine(webRootPath, productVM.Product.ImageUrl.TrimStart('\\'));
-                        if (System.IO.File.Exists(imagePath))
-                        {
-                            System.IO.File.Delete(imagePath);
-                        }
-                    }
-                    using (var filesStreams = new FileStream(Path.Combine(uploads, fileName + extension), FileMode.Create))
-                    {
-                        files[0].CopyTo(filesStreams);
-                    }
-                    productVM.Product.ImageUrl = @"\images\products\" + fileName + extension;
                 }
                 else
                 {
-                    // update when they do not change the image
-                    if (productVM.Product.Id != 0)
-                    {
-                        Product objFromDb = _unitOfWork.Product.Get(productVM.Product.Id);
-                        productVM.Product.ImageUrl = objFromDb.ImageUrl;
-                    }
-                }
-
-                if (productVM.Product.Id == 0)
-                {
-                    _unitOfWork.Product.Add(productVM.Product);
-                }
-                else
-                {
-                    _unitOfWork.Product.Update(productVM.Product);
+                    _unitOfWork.Product.Update(product);
                 }
                 _unitOfWork.Save();
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(Index));       //to see all the products
             }
-            else
-            {
-                productVM.CategoryList = _unitOfWork.Category.GetAll().Select(i => new SelectListItem
-                {
-                    Text = i.Name,
-                    Value = i.Id.ToString()
-                });
-                productVM.CoverTypeList = _unitOfWork.CoverType.GetAll().Select(i => new SelectListItem
-                {
-                    Text = i.Name,
-                    Value = i.Id.ToString()
-                });
-                if (productVM.Product.Id != 0)
-                {
-                    productVM.Product = _unitOfWork.Product.Get(productVM.Product.Id);
-                }
-            }
-            return View(productVM);
+            return View(product);
         }
-
 
         // API CALLS here
         #region API CALLS 
@@ -139,7 +88,7 @@ namespace PawanSekhonBookStore.Areas.Admin.Controllers
         public IActionResult GetAll()
         {
             //return NotFound();
-            var allObj = _unitOfWork.Product.GetAll(includeProperties: "Category,CoverType");
+            var allObj = _unitOfWork.Product.GetAll(includeProperties: "Category, CoverType");
             return Json(new { data = allObj });
         }
 
@@ -151,12 +100,6 @@ namespace PawanSekhonBookStore.Areas.Admin.Controllers
             if (objFromDb == null)
             {
                 return Json(new { success = false, message = "Error while deleting" });
-            }
-            string webRootPath = _hostEnvironment.WebRootPath;
-            var imagePath = Path.Combine(webRootPath, objFromDb.ImageUrl.TrimStart('\\'));
-            if (System.IO.File.Exists(imagePath))
-            {
-                System.IO.File.Delete(imagePath);
             }
             _unitOfWork.Product.Remove(objFromDb);
             _unitOfWork.Save();
