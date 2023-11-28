@@ -355,3 +355,5 @@ added upsert.cshtml in the Areas>Admin>Views>Product.
 in the product controller configure the Product Upsert Post Action method and uncommented it before modification.
 @12:41 
 edited the product controller.
+@12:48
+added the code as in the provided repository into the productcontroller.
