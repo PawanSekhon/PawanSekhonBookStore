@@ -359,3 +359,5 @@ edited the product controller.
 added the code as in the provided repository into the productcontroller.
 @12:53
 modified the sd.cs file code to make all the details of the cover type public.
+@1:06
+double check the code prom the provided repository in CoverTypeController and in cover type "Upsert.cshtml" file.
