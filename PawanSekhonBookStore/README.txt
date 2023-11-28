@@ -357,3 +357,5 @@ in the product controller configure the Product Upsert Post Action method and un
 edited the product controller.
 @12:48
 added the code as in the provided repository into the productcontroller.
+@12:53
+modified the sd.cs file code to make all the details of the cover type public.
