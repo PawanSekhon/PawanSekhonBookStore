@@ -361,3 +361,7 @@ added the code as in the provided repository into the productcontroller.
 modified the sd.cs file code to make all the details of the cover type public.
 @1:06
 double check the code prom the provided repository in CoverTypeController and in cover type "Upsert.cshtml" file.
+2023-12-05@14:08
+updates java files of product and cover type
+@14:09
+readded the image folder as it was not working properly
